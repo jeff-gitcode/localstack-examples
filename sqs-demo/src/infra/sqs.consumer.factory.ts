@@ -21,7 +21,8 @@ export class SQSConsumerFactory {
     //   ...config,
     //   handleMessage: messageHandler,
     // };
-
+    console.log({ config } );
+    
     const sqsConfig: ConsumerOptions = {
       queueUrl: config.queueUrl || '',
       region: config.region,
